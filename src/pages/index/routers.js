@@ -4,15 +4,16 @@ import { Platform,I18nManager } from 'react-native';
 import { StackNavigator, TransitionConfigs } from 'react-navigation';
 import store from '../../store';
 
-// 初始化
-import AppInit from './init';
-// TAB
-import {CTab, BTab} from './tab';
+
+import AppInit from './init'; // 初始化
+import {CTab, BTab} from './tab'; //Tab
+import Login from '../login'
 
 const appRouters = {
   AppInit: {screen: AppInit },
   CTab: {screen: CTab },
   BTab: {screen: BTab },
+  Login: {screen: Login},
 }
 
 const AppNavigator = StackNavigator(appRouters,{

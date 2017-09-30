@@ -10,7 +10,9 @@ class TabService extends Component {
   }
 
   render(){
-    return <View><Text>123</Text></View>
+    return <View style={{marginTop:100}}><Text onPress={()=>{
+      this.props.navigation.navigate('Login')
+    }}>123</Text></View>
   }
 }
 
